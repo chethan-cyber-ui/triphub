@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Hub - Friends Group</title>
+    <link rel="stylesheet" href="map.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places&callback=initMap" async defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Trip Hub - Explore with Friends</h1>
+            <p>Find amazing places, mark your favorite spots, and explore together!</p>
+        </header>
+
+        <div class="search-bar">
+            <input id="search-input" type="text" placeholder="Search for a place...">
+            <button onclick="searchPlace()">Search</button>
+        </div>
+
+        <div id="map" class="map"></div>
+    </div>
+
+    <div id="notification" class="notification">
+        New location marked on the map!
+    </div>
+
+    <script src="map.js"></script>
+</body>
+</html>

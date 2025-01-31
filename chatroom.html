@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Hub</title>
+    <link rel="stylesheet" href="chatroom.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Trip Hub!</h1>
+            <p>Where friends come together to share adventures!</p>
+        </header>
+
+        <div class="chat-section">
+            <div class="chat-box" id="chatBox">
+                <div id="messages"></div>
+            </div>
+            <div class="input-area">
+                <input type="text" id="messageInput" placeholder="Type a message..." onkeyup="sendMessage(event)">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+
+        <div class="photo-upload-section">
+            <input type="file" id="fileInput" accept="image/*" onchange="uploadPhoto(event)">
+            <button onclick="showPhotos()">Show Photos</button>
+        </div>
+
+        <div class="photo-gallery" id="photoGallery"></div>
+    </div>
+
+    <div id="notification" class="notification">
+        New Message or Photo!
+    </div>
+
+    <script src="chatroom.js"></script>
+</body>
+</html>

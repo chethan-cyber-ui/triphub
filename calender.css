@@ -1,0 +1,114 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Main container styling */
+.container {
+    width: 90%;
+    max-width: 500px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #007BFF;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Controls for month navigation */
+.calendar-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#month-display {
+    font-size: 20px;
+    margin: 0 20px;
+}
+
+/* Grid layout for the calendar */
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns for days of the week */
+    grid-gap: 10px;
+    text-align: center;
+}
+
+/* Styling for each day cell */
+.day {
+    padding: 10px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+}
+
+.day:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Styling for marked dates */
+.day.marked {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Popup notification styling */
+.notification {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    display: none;
+    font-size: 16px;
+    font-weight: bold;
+}

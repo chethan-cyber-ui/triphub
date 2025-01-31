@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Hub - Friends Group</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar Section -->
+        <header class="navbar">
+            <div class="left-options">
+                <!-- Logo that opens sidebar -->
+                <img src="2145213.png" alt="Logo" class="logo" onclick="toggleSidebar()">
+                <button class="settings-button" onclick="toggleSettings()">Settings</button>
+            </div>
+            <div class="center-options">
+                <!-- Navigation options -->
+                <button onclick="showMap()"><a href="map.html" target="_parent">Map</a></button>
+                <button onclick="showCalendar()"><a href="calendar.html" target="_parent">Calendar</a></button>
+                <button onclick="showChatroom()"><a href="chatroom.html" target="_parent">Chatroom</a></button>
+            </div>
+        </header>
+
+        <!-- Sidebar for popups -->
+        <div id="sidebar" class="sidebar">
+            <div class="sidebar-header">
+                <button class="close-btn" onclick="toggleSidebar()">X</button>
+                <h3>Popups</h3>
+            </div>
+            <div class="sidebar-content">
+                <ul>
+                    <li>Popup 1: Event Details</li>
+                    <li>Popup 2: Notifications</li>
+                    <li>Popup 3: Friend Requests</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Settings Menu (Hidden by default) -->
+        <div id="settings" class="settings-menu">
+            <h2>Settings</h2>
+            <ul>
+                <li>Profile</li>
+                <li>Privacy</li>
+                <li>Notifications</li>
+                <li>Log Out</li>
+            </ul>
+        </div>
+
+        <!-- Slideshow of Images (Background) -->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="MainBefore.jpg" alt="Slide 1">
+            </div>
+            <div class="mySlides fade">
+                <img src="istockphoto-1403500817-612x612.jpg" alt="Slide 2">
+            </div>
+            <div class="mySlides fade">
+                <img src="pexels-anjana-c-169994-674010.jpg" alt="Slide 3">
+            </div>
+        </div>
+
+        <!-- Notification Popup -->
+        <div id="notification" class="notification">
+            This is a popup notification!
+        </div>
+    </div>
+
+    <!-- Link to JavaScript file -->
+    <script src="1.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    width: 90%;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #4CAF50;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+}
+
+.chat-section {
+    margin-bottom: 20px;
+}
+
+.chat-box {
+    border: 2px solid #ccc;
+    padding: 10px;
+    height: 300px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background: #fafafa;
+}
+
+.input-area {
+    display: flex;
+}
+
+.input-area input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+.input-area button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.input-area button:hover {
+    background-color: #45a049;
+}
+
+.photo-upload-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#fileInput {
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.photo-gallery {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.photo-gallery img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.notification {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff9800;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    display: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.notification.show {
+    display: block;
+}

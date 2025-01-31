@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Hub - Friends Group Calendar</title>
+    <link rel="stylesheet" href="calender.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header section -->
+        <header>
+            <h1>Trip Hub - Plan Your Adventures Together</h1>
+            <p>Select dates to mark your trips, events, or important dates!</p>
+        </header>
+
+        <!-- Calendar navigation controls -->
+        <div class="calendar-controls">
+            <button onclick="previousMonth()">&#8249; Previous Month</button>
+            <h2 id="month-display">January 2025</h2>
+            <button onclick="nextMonth()">Next Month &#8250;</button>
+        </div>
+
+        <!-- Calendar display -->
+        <div id="calendar" class="calendar"></div>
+
+        <!-- Notification when a date is marked -->
+        <div id="notification" class="notification">
+            Date marked successfully!
+        </div>
+    </div>
+
+    <!-- Link to JavaScript file -->
+    <script src="calender.js"></script>
+</body>
+</html>
